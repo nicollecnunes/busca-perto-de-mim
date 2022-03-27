@@ -6,11 +6,10 @@ import googlemaps
 API_KEY = input('Digite a sua API KEY do Google Places ')
 map_client = googlemaps.Client(API_KEY)
 
-busca = input('O que você deseja buscar? ')
+busca = input('O que você deseja buscar?\n> ')
 
-#msg = input('Digite a mensagem que você quer enviar: ')
-#msg = msg.replace(" ", "%20")
-msg = ""
+msg = input('Digite a mensagem que você quer enviar:\n> ')
+msg = msg.replace(" ", "%20")
 
 def get_place_info(location_name):
     try:
@@ -53,8 +52,11 @@ for i in range(len(lista_infos)):
         print(y['result']['name'])
         print(y['result']['formatted_phone_number'])
         tel = y['result']['formatted_phone_number'].replace("-", "").replace(" ", "").replace("(", "").replace(")", "")
-        #print("Link do whatsapp: " + "wa.me/55" + tel + "?text=" + str(msg))
-        print("Link do whatsapp: " + "wa.me/55" + tel)
+        
+        if (msg != ""):
+            print("Link do whatsapp: " + "wa.me/55" + tel + "?text=" + str(msg))
+        else:
+            print("Link do whatsapp: " + "wa.me/55" + tel)
 
 
 
