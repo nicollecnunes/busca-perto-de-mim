@@ -9,6 +9,10 @@ pip install -r requirements.txt
 ```
 
 ## ☕ Etapas de uso
+Para executar: 
+```
+python main.py
+```
 
 1. Digite a sua API KEY do Google Places. Caso não possua uma, siga <a href="https://www.youtube.com/watch?v=pHhIICVcI6s">estes passos</a>
 
