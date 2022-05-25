@@ -48,7 +48,7 @@ print("Obtidos " + str(len(lista_infos)) + " resultados com telefone:")
 for i in range(len(lista_infos)):
     y = json.loads(lista_infos[i])
     if(len(y['result']) == 2):
-        print('-------------------------------------------------------------------------------------------------------')
+        print('----------------------------------------------')
         print(y['result']['name'])
         print(y['result']['formatted_phone_number'])
         tel = y['result']['formatted_phone_number'].replace("-", "").replace(" ", "").replace("(", "").replace(")", "")
