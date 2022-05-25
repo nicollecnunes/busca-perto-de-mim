@@ -1,6 +1,9 @@
 # Buscador
 > Busca estabelecimentos próximos ao usuário, retornando-os com número de telefone e link direto para o Whatsapp.
 
+## Vídeo demonstração
+[![Vídeo Demonstração](https://github.com/nicollecnunes/busca-perto-de-mim/blob/main/thumb.png)](https://www.linkedin.com/posts/activity-6935232142893326336-QT9C?utm_source=linkedin_share&utm_medium=member_desktop_web)
+
 ## 🚀 Instalando as dependências
 
 Para instalar as dependências, use:
